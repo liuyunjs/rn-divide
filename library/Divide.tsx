@@ -51,3 +51,7 @@ export const Divide = darkly<
   typeof DivideInternal,
   { darkTintColor?: ColorValue }
 >(DivideInternal);
+
+Divide.defaultProps = {
+  darkTintColor: '#444',
+};
