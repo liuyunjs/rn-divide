@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, SafeAreaView } from 'react-native';
-import { Divide } from './library';
+import { Divide } from './library/main';
 
 export default function App() {
   return (
