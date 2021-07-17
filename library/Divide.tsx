@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, ViewProps } from 'react-native';
+import { ColorValue, View, ViewProps } from 'react-native';
+import { darkly } from 'rn-darkly';
 import { DivideBase, DivideBaseProps, Float } from './DivideBase';
 
 export type DivideProps = ViewProps &
@@ -8,9 +9,7 @@ export type DivideProps = ViewProps &
     children?: React.ReactNode;
   };
 
-export const Divide: React.FC<DivideProps> & {
-  Float: typeof Float;
-} = ({
+const DivideInternal: React.FC<DivideProps> & { Float: typeof Float } = ({
   visible = true,
   start,
   end,
@@ -22,7 +21,7 @@ export const Divide: React.FC<DivideProps> & {
   size,
   horizontal,
   ...rest
-}: DivideProps) => {
+}) => {
   const divide = (
     <DivideBase
       size={size}
@@ -46,4 +45,9 @@ export const Divide: React.FC<DivideProps> & {
   );
 };
 
-Divide.Float = Float;
+DivideInternal.Float = Float;
+
+export const Divide = darkly<
+  typeof DivideInternal,
+  { darkTintColor?: ColorValue }
+>(DivideInternal);

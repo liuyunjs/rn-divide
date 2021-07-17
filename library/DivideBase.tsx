@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, ViewStyle } from 'react-native';
+import { ColorValue, StyleSheet, View, ViewStyle } from 'react-native';
 import { modulo } from '@liuyunjs/utils/lib/modulo';
 
 export enum Float {
@@ -14,7 +14,7 @@ export type DivideBaseProps = {
   start?: number;
   end?: number;
   offset?: number;
-  tintColor?: string;
+  tintColor?: ColorValue;
   size?: number;
   horizontal?: boolean;
 };
