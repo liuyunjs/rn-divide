@@ -50,7 +50,7 @@ DivideInternal.Float = Float;
 export const Divide = darkly<
   typeof DivideInternal,
   { darkTintColor?: ColorValue }
->(DivideInternal);
+>(DivideInternal, [], ['tintColor']);
 
 Divide.defaultProps = {
   darkTintColor: '#444',
