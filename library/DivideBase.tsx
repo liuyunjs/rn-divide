@@ -72,7 +72,14 @@ export const DivideBase: React.FC<DivideBaseProps> = ({
 
   return (
     <View style={[isFloat && StyleSheet.absoluteFill, style]}>
-      <View style={[StyleSheet.absoluteFill, { backgroundColor: tintColor }]} />
+      <View style={[styles.divide, { backgroundColor: tintColor }]} />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  divide: {
+    width: '100%',
+    height: '100%',
+  },
+});
