@@ -1295,10 +1295,19 @@
   dependencies:
     "@types/react" "^16"
 
-"@types/react@*", "@types/react@^16", "@types/react@^17":
+"@types/react@*":
   version "17.0.14"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.14.tgz#f0629761ca02945c4e8fea99b8177f4c5c61fb0f"
   integrity sha512-0WwKHUbWuQWOce61UexYuWTGuGY/8JvtUe/dtQ6lR4sZ3UiylHotJeWpf3ArP9+DSGUoLY3wbU59VyMrJps5VQ==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^16":
+  version "16.14.13"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.13.tgz#14f77c75ea581fa632907440dfda23b3c6ab24c9"
+  integrity sha512-KznsRYfqPmbcA5pMxc4mYQ7UgsJa2tAgKE2YwEmY5xKaTVZXLAY/ImBohyQHnEoIjxIJR+Um4FmaEYDr3q3zlg==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -5581,13 +5590,29 @@ rimraf@~2.6.2:
   dependencies:
     glob "^7.1.3"
 
-rn-darkly@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/rn-darkly/-/rn-darkly-0.0.6.tgz#d1556a7aeec0000b5d515044c3dbff0fc7d2ec6f"
-  integrity sha512-33j1viMvA1xklv4hYf4ap2/bZX0FejCyusMY0eS8w8Rp+3dX4Z3rRt5MWvrNjcYonA4WyrVQMLJ6dXUsEJ14EQ==
+rn-darkly@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/rn-darkly/-/rn-darkly-1.0.1.tgz#a97686c986b4a592f236c58736deef5b7345f87a"
+  integrity sha512-q1msaW82ryveiN6jeH8zMbOSPhCcZ0X8ZQQ0hXr7zq6TLsrDT2Iv6y+7ttAAGQoHLLxU9L6YueQfPzwhbP4aOA==
   dependencies:
     "@types/hoist-non-react-statics" "^3.3.1"
     hoist-non-react-statics "^3.3.2"
+
+rn-darkly@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/rn-darkly/-/rn-darkly-1.0.2.tgz#53cad8ccf6701e628803a72f5ebc18008d557d52"
+  integrity sha512-tRykAv6V+uMaPbpHmMIjMCEI+LIy5RonPS1iOktZ3kklSVtG3mgfvjALU5HRY+JRGh5CAJnD2iWhij2muEfjEg==
+  dependencies:
+    "@types/hoist-non-react-statics" "^3.3.1"
+    hoist-non-react-statics "^3.3.2"
+
+rn-divide@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/rn-divide/-/rn-divide-1.0.2.tgz#6f8453f413fe468f2c69d3b249387eb2b63ddda6"
+  integrity sha512-2dvHj53x7tljPTJD8g7o6q1VHNHPEt2UzgUDE7rVWiT3s1RbqcW1WidMZKWOJe1TteQddcth+/42NEYFu1/ZKA==
+  dependencies:
+    "@liuyunjs/utils" "^1.0.0"
+    rn-darkly "^1.0.1"
 
 rsvp@^4.8.4:
   version "4.8.5"
