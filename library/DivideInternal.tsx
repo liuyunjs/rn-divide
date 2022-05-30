@@ -9,7 +9,7 @@ export enum Float {
   left,
 }
 
-export type DivideBaseProps = {
+export type DivideInternalProps = {
   float?: Float;
   start?: number;
   end?: number;
@@ -19,7 +19,7 @@ export type DivideBaseProps = {
   horizontal?: boolean;
 };
 
-export const DivideBase: React.FC<DivideBaseProps> = ({
+export const DivideInternal: React.FC<DivideInternalProps> = ({
   float,
   end,
   size = 1,
@@ -35,8 +35,8 @@ export const DivideBase: React.FC<DivideBaseProps> = ({
   const isHorizontal = horizontal !== false;
   const style: ViewStyle = isHorizontal
     ? {
-        paddingLeft: start,
-        paddingRight: end,
+        paddingStart: start,
+        paddingEnd: end,
         width: '100%',
         height: size,
       }
